@@ -173,9 +173,8 @@ If you use this code, please cite:
 ```bibtex
 @inproceedings{author2025hgsto,
   title     = {Topology-Aware Path Pruning in {GraphRAG} for Accelerated Multi-Hop Relation Extraction},
-  author    = {[Author Name] and [Co-Author Name]},
-  year      = {2025},
-  note      = {arXiv preprint}
+  author    = {Kalpita Raut},
+  year      = {2026}
 }
 ```
 
