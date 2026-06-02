@@ -1,0 +1,22 @@
+# HG-STO dependencies
+# Tested on Python 3.10+ and Python 3.11
+
+# Core ML / NLP
+sentence-transformers>=2.7.0    # all-MiniLM-L6-v2 encoder
+transformers>=4.40.0            # Llama-3 backbone
+torch>=2.2.0                    # PyTorch (CUDA 12.1 recommended for A100)
+accelerate>=0.29.0              # device_map="auto" for LLM loading
+
+# Numerics
+numpy>=1.26.0
+
+# Utilities
+tqdm>=4.66.0
+
+# Optional: for G-Retriever baseline
+# torch-geometric>=2.5.0
+# torch-scatter
+# torch-sparse
+
+# Development / testing
+pytest>=8.0.0
