@@ -1,0 +1,10 @@
+{
+  "_comment": "Optimal HG-STO hyperparameters selected via grid search on 10% HotpotQA dev split. Matches Table III (alpha=1.0, beta=0.35).",
+  "alpha": 1.0,
+  "beta": 0.35,
+  "K": 3,
+  "tau": 0.85,
+  "encoder": "all-MiniLM-L6-v2",
+  "llm_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "max_new_tokens": 128
+}
