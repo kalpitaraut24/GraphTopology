@@ -1,0 +1,19 @@
+{
+  "_comment": "Hyperparameter grid used to produce Table III in the paper. Searched on held-out 10% HotpotQA dev split (not included in Table II evaluation).",
+  "alpha_grid": [0.7, 1.0, 1.3],
+  "beta_grid":  [0.00, 0.15, 0.35, 0.55],
+  "K_fixed":    3,
+  "tau_fixed":  0.85,
+  "encoder":    "all-MiniLM-L6-v2",
+  "llm_model":  "meta-llama/Meta-Llama-3-8B-Instruct",
+  "dev_fraction": 0.10,
+  "seed": 42,
+  "results": [
+    {"alpha": 1.0, "beta": 0.00, "hotpotqa_f1": 61.4, "metaqa_acc": 73.2, "avg_tokens": 4812, "notes": "Baseline — no pruning (BFS equivalent)"},
+    {"alpha": 1.0, "beta": 0.15, "hotpotqa_f1": 66.1, "metaqa_acc": 78.4, "avg_tokens": 3910, "notes": "Mild hub dampening"},
+    {"alpha": 1.0, "beta": 0.35, "hotpotqa_f1": 71.6, "metaqa_acc": 84.1, "avg_tokens": 2780, "notes": "Optimal (selected)"},
+    {"alpha": 1.0, "beta": 0.55, "hotpotqa_f1": 69.3, "metaqa_acc": 81.7, "avg_tokens": 2410, "notes": "Over-penalizes sparse nodes"},
+    {"alpha": 0.7, "beta": 0.35, "hotpotqa_f1": 68.8, "metaqa_acc": 80.9, "avg_tokens": 2890, "notes": "Weak semantic guidance"},
+    {"alpha": 1.3, "beta": 0.35, "hotpotqa_f1": 70.9, "metaqa_acc": 83.5, "avg_tokens": 2810, "notes": "Semantic dominance; marginal gain vs. optimal"}
+  ]
+}
